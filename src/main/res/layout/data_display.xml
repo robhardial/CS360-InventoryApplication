@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- data_display.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <!-- Logical labels and headers -->
+    <TextView
+        android:id="@+id/textViewHeader1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inventory Grid"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Display column names horizontally -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quantity"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Price"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Data Grid -->
+    <GridView
+        android:id="@+id/InventoryTracker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="1"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="50dp"
+        android:verticalSpacing="2dp"/>
+
+    <!-- Add Button -->
+    <Button
+        android:id="@+id/buttonAddData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Data" />
+
+    <!-- Mechanism for changing data (example with EditText) -->
+    <!-- ... EditText and other UI elements ... -->
+
+    <!-- Delete Button (example with a row layout) -->
+    <LinearLayout
+        android:id="@+id/rowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- ... Other UI elements ... -->
+
+        <Button
+            android:id="@+id/buttonDeleteData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/buttonEditData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit" />
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout" />
+
+    </LinearLayout>
+
+    <!-- Additional fields for adding data (if needed) -->
+    <!-- You can add more EditText fields or any other input elements here -->
+
+</LinearLayout>
+
+
+
